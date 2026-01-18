@@ -1,5 +1,6 @@
 public class Main {
-    public static void Main(String[] args){
-        System.out.println("Hola mundo, Alexa Pardo Díaz, 2D, 12/01/2026");
+    public static void main(String[] args){
+        System.out.println("Alexa Pardo Díaz 2-D 16/01/26 Hola mundo");
     }
+
 }
