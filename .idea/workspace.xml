@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cb99d7b8-0cc2-41d2-8070-17d97ba69bc2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MergeWithOutConflict/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/MergeWithOutConflict/src/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="cb99d7b8-0cc2-41d2-8070-17d97ba69bc2" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +15,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/mensaje1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
@@ -70,6 +72,7 @@
       <workItem from="1768778184991" duration="820000" />
       <workItem from="1768780701911" duration="1045000" />
       <workItem from="1768785533711" duration="273000" />
+      <workItem from="1768788344865" duration="3226000" />
     </task>
     <servers />
   </component>
