@@ -9,7 +9,7 @@ public class Main {
         int opcion;
 
         do {
-            System.out.println("Menu (seleccione una opción)");
+            System.out.println("Menu (selecciione una opción)");
             System.out.println("1- Alta alumno");
             System.out.println("2- Buscar alumno");
             System.out.println("3- Actualizar");
@@ -47,11 +47,13 @@ public class Main {
                     break;
 
                 case 0:
-                    System.out.println("Saliendo  del programa");
+                    System.out.println("Saliendo  del programa T-T");
+                    System.out.println("____________________");
                     break;
 
                 default:
-                    System.out.println("Opcion invalida :(");
+                    System.out.println("Opcion invalida :( ");
+                    System.out.println("____________________");
             }
 
         } while (opcion != 0);

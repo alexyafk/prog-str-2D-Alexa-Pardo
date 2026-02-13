@@ -11,12 +11,14 @@ public class Sistema {
         sc.nextLine();
 
         if (id <= 0) {
-            System.out.println("ID invalido :(");
+            System.out.println("ID invalido : ");
+            System.out.println("____________________");
             return;
         }
 
         if (buscar(id) != -1) {
             System.out.println("ID repetido");
+            System.out.println("____________________");
             return;
         }
 
@@ -24,6 +26,7 @@ public class Sistema {
         String nombre = sc.nextLine();
         if (nombre.isEmpty()) {
             System.out.println("Nombre vacio");
+            System.out.println("____________________");
             return;
         }
 
@@ -31,6 +34,7 @@ public class Sistema {
         double promedio = sc.nextDouble();
         if (promedio < 0 || promedio > 10) {
             System.out.println("Promedio invalido");
+            System.out.println("____________________");
             return;
         }
 
@@ -38,6 +42,7 @@ public class Sistema {
             if (alumnos[i] == null) {
                 alumnos[i] = new Alumno(id, nombre, promedio);
                 System.out.println("Alumno dado de alta");
+                System.out.println("____________________");
                 return;
             }
         }
@@ -63,7 +68,8 @@ public class Sistema {
                     alumnos[pos].nombre + " " +
                     alumnos[pos].promedio);
         } else {
-            System.out.println("No encontrado");
+            System.out.println("Alumno no encontrado");
+            System.out.println("____________________");
         }
     }
 
@@ -74,7 +80,8 @@ public class Sistema {
         int pos = buscar(id);
 
         if (pos == -1) {
-            System.out.println("No encontrado");
+            System.out.println("Alumno no encontrado");
+            System.out.println("____________________");
             return;
         }
 
@@ -84,8 +91,10 @@ public class Sistema {
         if (nuevo >= 0 && nuevo <= 10) {
             alumnos[pos].promedio = nuevo;
             System.out.println("Actualizado");
+            System.out.println("____________________");
         } else {
             System.out.println("Promedio invalido");
+            System.out.println("____________________");
         }
     }
 
@@ -98,8 +107,10 @@ public class Sistema {
         if (pos != -1) {
             alumnos[pos].activo = false;
             System.out.println("Alumno dado de baja");
+            System.out.println("___________________");
         } else {
             System.out.println("Alumno no encontrado");
+            System.out.println("____________________");
         }
     }
 
@@ -139,8 +150,10 @@ public class Sistema {
             System.out.println("Mayor: " + mayor.id + " " + mayor.nombre + " " + mayor.promedio);
             System.out.println("Menor: " + menor.id + " " + menor.nombre + " " + menor.promedio);
             System.out.println(">= 8.0: " + arriba8);
+            System.out.println("____________________________");
         } else {
-            System.out.println("No hay alumnos activos");
+            System.out.println("No hay alumnos dados de alta");
+            System.out.println("____________________________");
         }
     }
 }
