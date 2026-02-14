@@ -127,7 +127,7 @@ public class Sistema {
         int cont = 0;
         Alumno mayor = null;
         Alumno menor = null;
-        int arriba8 = 0;
+        int promede8 = 0;
 
         for (Alumno a : alumnos) {
             if (a != null && a.activo) {
@@ -141,7 +141,7 @@ public class Sistema {
                     menor = a;
 
                 if (a.promedio >= 8.0)
-                    arriba8++;
+                    promede8++;
             }
         }
 
@@ -149,7 +149,7 @@ public class Sistema {
             System.out.println("Promedio general: " + (suma / cont));
             System.out.println("Mayor: " + mayor.id + " " + mayor.nombre + " " + mayor.promedio);
             System.out.println("Menor: " + menor.id + " " + menor.nombre + " " + menor.promedio);
-            System.out.println(">= 8.0: " + arriba8);
+            System.out.println("Alumnos con promedio arriba de 8.0: " + promede8);
             System.out.println("____________________________");
         } else {
             System.out.println("No hay alumnos dados de alta");
