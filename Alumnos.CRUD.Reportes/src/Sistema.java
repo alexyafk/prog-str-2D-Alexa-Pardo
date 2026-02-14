@@ -61,12 +61,12 @@ public class Sistema {
         System.out.print("ID: ");
         int id = sc.nextInt();
 
-        int pos = buscar(id);
+        int posicion = buscar(id);
 
-        if (pos != -1) {
-            System.out.println(alumnos[pos].id + " " +
-                    alumnos[pos].nombre + " " +
-                    alumnos[pos].promedio);
+        if (posicion != -1) {
+            System.out.println(alumnos[posicion].id + " " +
+                    alumnos[posicion].nombre + " " +
+                    alumnos[posicion].promedio);
         } else {
             System.out.println("Alumno no encontrado");
             System.out.println("____________________");
@@ -77,9 +77,9 @@ public class Sistema {
         System.out.print("ID: ");
         int id = sc.nextInt();
 
-        int pos = buscar(id);
+        int posicion = buscar(id);
 
-        if (pos == -1) {
+        if (posicion == -1) {
             System.out.println("Alumno no encontrado");
             System.out.println("____________________");
             return;
@@ -89,7 +89,7 @@ public class Sistema {
         double nuevo = sc.nextDouble();
 
         if (nuevo >= 0 && nuevo <= 10) {
-            alumnos[pos].promedio = nuevo;
+            alumnos[posicion].promedio = nuevo;
             System.out.println("Actualizado");
             System.out.println("____________________");
         } else {
@@ -102,10 +102,10 @@ public class Sistema {
         System.out.print("ID: ");
         int id = sc.nextInt();
 
-        int pos = buscar(id);
+        int posicion = buscar(id);
 
-        if (pos != -1) {
-            alumnos[pos].activo = false;
+        if (posicion != -1) {
+            alumnos[posicion].activo = false;
             System.out.println("Alumno dado de baja");
             System.out.println("___________________");
         } else {
@@ -149,7 +149,7 @@ public class Sistema {
             System.out.println("Promedio general: " + (suma / cont));
             System.out.println("Mayor: " + mayor.id + " " + mayor.nombre + " " + mayor.promedio);
             System.out.println("Menor: " + menor.id + " " + menor.nombre + " " + menor.promedio);
-            System.out.println("Alumnos con promedio arriba de 8.0: " + promede8);
+            System.out.println("Alumnos con promedio arriba de 8: " + promede8);
             System.out.println("____________________________");
         } else {
             System.out.println("No hay alumnos dados de alta");
