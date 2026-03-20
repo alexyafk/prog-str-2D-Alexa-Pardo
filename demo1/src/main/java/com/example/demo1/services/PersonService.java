@@ -23,6 +23,7 @@ public class PersonService {
         }
         return result;
     }
+
     public void addPerson(String nombre, String email, String edad) throws IOException {
         validatePerson(nombre,email, edad);
         String nameNoComan = nombre.replace(",", "");
@@ -32,17 +33,23 @@ public class PersonService {
         repo.appendNewLine(nameNoComan+","+emailNoComan+","+edadNoComan);
     }
     public void updatePerson(int index, String name, String email, String edad) throws IOException {
-        List<String> Lines = getAllCleanLines();
+        List<String> lines = getAllCleanLines();
         if (index == -1){
-            throw new  IllegalArgumentException("El indice recibido esta invalido");
+            throw new  IllegalArgumentException("El indice recibido es invalido");
         }
-        Lines.set(index, name+ "," + email + "," + edad);
-        repo.appendAllLines(Lines);
+        lines.set(index, name+","+email+","+edad);
+        repo.appendAllLines(lines);
+    }
+    public void deletePerson(int index) throws IOException{
+        List<String> lines = getAllCleanLines();
+        lines.remove(index);
+        repo.appendAllLines(lines);
+
     }
     private List<String> getAllCleanLines() throws IOException{
-        List<String> lines= repo.readAllLines();
-        List<String> cleanLines= new ArrayList<>();
-        for (String line : lines){
+        List<String> lines = repo.readAllLines();
+        List<String> cleanLines = new ArrayList<>();
+        for(String line : lines){
             if(line!=null && !line.isBlank()){
                 cleanLines.add(line);
             }
@@ -71,4 +78,5 @@ public class PersonService {
             throw new IllegalArgumentException("Edad no puede ir vacia");
         }
     }
+
 }

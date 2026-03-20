@@ -2,12 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cb99d7b8-0cc2-41d2-8070-17d97ba69bc2" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demolistview/data/persons.csv" beforeDir="false" afterPath="$PROJECT_DIR$/demolistview/data/persons.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demolistview/src/main/java/com/example/demolistview/controllers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demolistview/src/main/java/com/example/demolistview/controllers/AppController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demolistview/src/main/java/com/example/demolistview/repositories/PersonFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demolistview/src/main/java/com/example/demolistview/repositories/PersonFileRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demolistview/src/main/java/com/example/demolistview/services/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demolistview/src/main/java/com/example/demolistview/services/PersonService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demolistview/src/main/resources/com/example/demolistview/views/app-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/demolistview/src/main/resources/com/example/demolistview/views/app-view.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo1/data/persons.csv" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/data/persons.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo1/src/main/java/com/example/demo1/controlers/AppController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/src/main/java/com/example/demo1/controlers/AppController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo1/src/main/java/com/example/demo1/repositories/personFileRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/src/main/java/com/example/demo1/repositories/personFileRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo1/src/main/java/com/example/demo1/services/PersonService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/src/main/java/com/example/demo1/services/PersonService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo1/src/main/resources/com/example/demo1/views/app.view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/demo1/src/main/resources/com/example/demo1/views/app.view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,27 +36,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Java Scratch.Unnamed.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;deletionFromPopupRequiresConfirmation&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/alexa/Documents/prog-str-2E-Alexa-Pardo&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/alexa/Documents/prog-str-2E-Alexa-Pardo/proyecto-01-hola-mundo/src/Main.java&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;vcs.Git&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Main.executor": "Run",
+    "Java Scratch.Unnamed.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "deletionFromPopupRequiresConfirmation": "false",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/alexa/OneDrive/Desktop/progra/prog-str-2D-Alexa-Pardo",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/alexa/Documents/prog-str-2E-Alexa-Pardo/proyecto-01-hola-mundo/src/Main.java",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "vcs.Git",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -86,6 +85,7 @@
       <workItem from="1768859241569" duration="826000" />
       <workItem from="1773272149483" duration="165000" />
       <workItem from="1773272577951" duration="20000" />
+      <workItem from="1774019160573" duration="17000" />
     </task>
     <servers />
   </component>
