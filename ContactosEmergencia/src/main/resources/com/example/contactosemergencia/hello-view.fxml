@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="254.0" prefWidth="356.0" spacing="10" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.contactosemergencia.HelloController">
+   <GridPane>
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+      
+          <TextField fx:id="txtNombre" GridPane.columnIndex="1" />
+          <TextField fx:id="txtTelefono" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      
+          <ComboBox fx:id="comboParentesco" prefHeight="26.0" prefWidth="169.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+         <TextFlow prefHeight="200.0" prefWidth="200.0" GridPane.rowIndex="2">
+            <children>
+               <TextField text="Parentesco" />
+            </children>
+         </TextFlow>
+         <TextField text="Nombre:" />
+         <TextField text="Telefono:" GridPane.rowIndex="1" />
+      </children>
+   </GridPane>
+   <GridPane>
+     <columnConstraints>
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+       <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+      
+          <Button onAction="#agregar" text="Agregar" />
+          <Button onAction="#buscar" text="Buscar" GridPane.columnIndex="1" />
+          <Button onAction="#actualizar" text="Actualizar" GridPane.rowIndex="1" />
+          <Button onAction="#eliminar" text="Eliminar" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+          <Button onAction="#limpiar" text="Limpiar" GridPane.rowIndex="2" />
+      </children>
+   </GridPane>
+
+    <ListView fx:id="listViewContactos" prefHeight="122.0" prefWidth="356.0" />
+
+</VBox>
